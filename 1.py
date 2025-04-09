@@ -13,13 +13,14 @@ while ( gam != 0 ):
     if ( gam > 0 and gam <= len(Game)):
         
         answer_true = Game[gam - 1]()
-        while(True):
+        for i in range(3, 0, -1):
             answer = input("Your answer: ")
             if (answer == answer_true):
                 print("Correct!")
                 break
             else:
                 print("Not correct!   :(")
+                print("You have popitoc:", i - 1   ,":(")
 
     elif (gam == 0):
         break
