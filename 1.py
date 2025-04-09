@@ -1,4 +1,3 @@
-import random
 from game1 import Game_1
 from game2 import Game_2
 print("Welcome to the Brain Games!")
