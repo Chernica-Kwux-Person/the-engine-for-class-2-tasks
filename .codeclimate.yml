@@ -3,13 +3,7 @@ plugins:
   pylint:
     enabled: true
 
-engines:
-  # Настройка для анализа с помощью pylint (анализирует стиль, ошибки, дублирование и др.)
-  pylint:
-    config:
-      config: .pylintrc
-
-exclude_paths:
-  - tests/*
-  - docs/*
-  - venv/*
+exclude_patterns:
+  - "tests/*"
+  - "venv/*"
+  - "docs/*"
