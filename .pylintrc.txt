@@ -1,0 +1,17 @@
+[MASTER]
+ignore=tests,venv
+init-hook='import sys; sys.path.append(".")'
+
+[MESSAGES CONTROL]
+disable=
+    F401  # отключаем "импорт не используется"
+
+[FORMAT]
+max-line-length=80
+
+[REPORTS]
+output-format=colorized
+reports=no
+
+[TYPECHECK]
+ignored-modules=
